@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  useHistory,
+} from "react-router-dom";
 
 /**
  * http://localhost:3000/
@@ -57,7 +62,18 @@ function App() {
 }
 
 function DefaultPage() {
-  return <div>Default Page As Seprate Component</div>;
+  let history = useHistory();
+
+  const handleClick = () => {
+    history.push("/page1");
+  };
+
+  return (
+    <div>
+      Default Page As Seprate Component
+      <button onClick={handleClick}>GO TO PAGE1</button>
+    </div>
+  );
 }
 
 function Page1() {
