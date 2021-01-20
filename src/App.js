@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 /**
  * http://localhost:3000/
@@ -10,18 +10,19 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
+      {/** Navigation Link */}
+      <Link to="/">Home</Link> | <Link to="/page1">Page1</Link> |{" "}
+      <Link to="/page2">Page2</Link> |<Link to="/page3"> Page3</Link>
+      {/** Routes Here */}
       <Route exact path="/">
         <DefaultPage />
       </Route>
-
       <Route path="/page1">
         <Page1 />
       </Route>
-
       <Route path="/page2">
         <Page2 />
       </Route>
-
       <Route path="/page3">
         <Page3 />
       </Route>
