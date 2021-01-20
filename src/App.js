@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import Page1 from "./Page1";
+
 /**
  * http://localhost:3000/
  * http://localhost:3000/page1
@@ -32,10 +34,6 @@ function App() {
 
 function DefaultPage() {
   return <div>Default Page As Seprate Component</div>;
-}
-
-function Page1() {
-  return <div>Page 1</div>;
 }
 
 function Page2() {
