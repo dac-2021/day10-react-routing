@@ -11,8 +11,34 @@ function App() {
   return (
     <Router>
       {/** Navigation Link */}
-      <Link to="/">Home</Link> | <Link to="/page1">Page1</Link> |{" "}
-      <Link to="/page2">Page2</Link> |<Link to="/page3"> Page3</Link>
+      <div className="row bg-dark" style={{ height: "65px" }}>
+        <div className="col-3 d-flex align-items-center text-light">
+          Project Book
+        </div>
+        <div className="col-9 d-flex align-items-center justify-content-end">
+          <Link to="/">
+            <button type="button" class="btn btn-outline-light">
+              Home
+            </button>
+          </Link>
+          <Link to="/page1">
+            <button type="button" class="btn btn-outline-light">
+              Page 1
+            </button>
+          </Link>
+          <Link to="/page2">
+            <button type="button" class="btn btn-outline-light">
+              Page 2
+            </button>
+          </Link>
+          <Link to="/page3">
+            <button type="button" class="btn btn-outline-light">
+              Page 3
+            </button>
+          </Link>
+        </div>
+      </div>
+
       {/** Routes Here */}
       <Route exact path="/">
         <DefaultPage />
