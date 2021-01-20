@@ -30,19 +30,47 @@ function App() {
 }
 
 function DefaultPage() {
-  return <div>Default Page As Seprate Component</div>;
+  return (
+    <div
+      className="centerify"
+      style={{ background: "tomato", color: "white" }}
+    >
+      Default Page As Seprate Component
+    </div>
+  );
 }
 
 function Page1() {
-  return <div>Page 1</div>;
+  return (
+    <div
+      className="centerify"
+      style={{ background: "royalblue", color: "white" }}
+    >
+      Page 1
+    </div>
+  );
 }
 
 function Page2() {
-  return <div>Page2</div>;
+  return (
+    <div
+      className="centerify"
+      style={{ background: "gold", color: "white" }}
+    >
+      Page2
+    </div>
+  );
 }
 
 function Page3() {
-  return <div>Page3</div>;
+  return (
+    <div
+      className="centerify"
+      style={{ background: "silver", color: "white" }}
+    >
+      Page3
+    </div>
+  );
 }
 
 export default App;
