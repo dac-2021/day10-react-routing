@@ -11,22 +11,38 @@ function App() {
   return (
     <Router>
       <Route exact path="/">
-        <div>Default Page</div>
+        <DefaultPage />
       </Route>
 
       <Route path="/page1">
-        <div>Page 1</div>
+        <Page1 />
       </Route>
 
       <Route path="/page2">
-        <div>Page 2</div>
+        <Page2 />
       </Route>
 
       <Route path="/page3">
-        <div>Page 3</div>
+        <Page3 />
       </Route>
     </Router>
   );
+}
+
+function DefaultPage() {
+  return <div>Default Page As Seprate Component</div>;
+}
+
+function Page1() {
+  return <div>Page 1</div>;
+}
+
+function Page2() {
+  return <div>Page2</div>;
+}
+
+function Page3() {
+  return <div>Page3</div>;
 }
 
 export default App;
